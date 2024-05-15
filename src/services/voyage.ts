@@ -12,7 +12,7 @@ async function getAllVoyages() {
   });
 }
 
-async function getVoyageByNom(nom) {
+async function getVoyageByNom(nom: any) {
   let axiosConfig = {
     headers: {
       "content-type": "application/json",

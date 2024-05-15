@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="ml-auto">
         <a
           className="nav-link"
-          href="/users"
+          href="/"
           style={{ color: "black", marginLeft: "10px" }}
         >
           accueil
@@ -40,7 +40,7 @@ export default function Navbar() {
         </a>
         <a
           className="nav-link"
-          href="/reservation"
+          href="/contact"
           style={{ color: "black", marginLeft: "10px" }}
         >
           contact

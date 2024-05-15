@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Navbar from "@/src/components/navbar/Navbar";
 import { getAllVoyages } from "@/src/services/voyage";
+import Card from "@/src/components/Card";
 
 export default function Voyages() {
   const [voyagesList, setVoyagesList] = useState([]);
@@ -28,6 +29,7 @@ export default function Voyages() {
                     <p className="text-center py-1">{voyage.date_fin}</p>
                     <div className="w-4/6 mx-auto flex items-center justify-between "></div> */
   }
+  console.log(voyagesList);
   //   </div>
   // </div>
   // );

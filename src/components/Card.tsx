@@ -1,6 +1,6 @@
 import { useRouter } from "next/navigation";
 
-const Card = ({ image, nom, description, id }) => {
+export default function Card ({ image, nom, description, id }) {
   const { push } = useRouter();
   return (
     <div
@@ -55,5 +55,3 @@ const Card = ({ image, nom, description, id }) => {
     </div>
   );
 };
-
-export default Card;
