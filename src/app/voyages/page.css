@@ -1,0 +1,12 @@
+.image {
+    width: 50%;
+}
+.voyageDetail {
+    display: flex;
+    flex-direction: column;
+}
+.listevoyage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
