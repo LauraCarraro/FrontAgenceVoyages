@@ -1,5 +1,4 @@
 import { useRouter } from "next/navigation";
-import React from "react";
 
 const Card = ({ image, nom, description, id }) => {
   const { push } = useRouter();

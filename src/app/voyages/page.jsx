@@ -1,12 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { getAllVoyages } from "../Services/voyage";
-import { useRouter } from "next/navigation";
-import Navbar from "../components/navbar/Navbar";
-import "./page.css";
-import Card from "../components/Card";
 
-const Voyages = () => {
+import "./page.css";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import Navbar from "@/src/components/navbar/Navbar";
+import { getAllVoyages } from "@/src/services/voyage";
+
+export default function Voyages() {
   const [voyagesList, setVoyagesList] = useState([]);
   const [isReloadNeeded, setIsReloadNeeded] = useState(false);
 
@@ -64,6 +64,4 @@ const Voyages = () => {
       </main>
     </div>
   );
-};
-
-export default Voyages;
+}
