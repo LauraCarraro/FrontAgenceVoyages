@@ -3,10 +3,7 @@ import { useRouter } from "next/navigation";
 export default function Card ({ image, nom, description, id }) {
   const { push } = useRouter();
   return (
-    <div
-      className="w-full md:w-1/2 xl:w-1/3 px-4"
-      onClick={() => push(`/voyages/${nom}`)}
-    >
+    <div className="w-full md:w-1/2 xl:w-1/3 px-2"> {/* Modifier la classe de marge ici */}
       <div>
         <div className="bg-white rounded-lg overflow-hidden mb-10">
           <img src={image} alt={nom} className="w-full h-64 object-cover" />
@@ -34,7 +31,7 @@ export default function Card ({ image, nom, description, id }) {
               {description}
             </p>
             <a
-              href="/voyages/nom"
+              onClick={() => push(`/voyages/${nom}`)}
               className="
                          inline-block
                          py-2
@@ -45,6 +42,7 @@ export default function Card ({ image, nom, description, id }) {
                          font-medium
                          hover:border-primary hover:bg-primary hover:text-white
                          transition
+                         cursor-pointer
                          "
             >
               En savoir plus

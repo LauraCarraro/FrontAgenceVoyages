@@ -1,44 +1,35 @@
+import "./formReservation.css";
 export default function FormReservation() {
   return (
     <>
-      <div>FormReservation</div>
-      <form>
-        <div classList="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input
-            type="email"
-            classList="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-          />
-          <small id="emailHelp" classList="form-text text-muted">
-            We'll never share your email with anyone else.
-          </small>
-        </div>
-        <div classList="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input
-            type="password"
-            classList="form-control"
-            id="exampleInputPassword1"
-            placeholder="Password"
-          />
-        </div>
-        <div classList="form-check">
-          <input
-            type="checkbox"
-            classList="form-check-input"
-            id="exampleCheck1"
-          />
-          <label classList="form-check-label" for="exampleCheck1">
-            Check me out
+      <form className="form">
+        <p className="title">Réservation</p>
+        <p className="message">Demande de renseignements</p>
+        <div className="flex">
+          <label>
+            <input required placeholder="" type="text" className="input" />
+            <span>Prénom</span>
+          </label>
+
+          <label>
+            <input required placeholder="" type="text" className="input" />
+            <span>Nom</span>
           </label>
         </div>
-        <button type="submit" classList="btn btn-primary">
-          Submit
-        </button>
+
+        <label>
+          <input required placeholder="" type="email" className="input" />
+          <span>Email</span>
+        </label>
+
+        <label>
+          <input required placeholder="" type="tel" className="input" />
+          <span>Téléphone</span>
+        </label>
+        <button className="submit">Envoyer</button>
+    
       </form>
     </>
   );
 }
+
